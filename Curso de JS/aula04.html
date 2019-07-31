@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="em">
+<head>
+	<meta chaset="UTF-8"/>
+	<title>Aula 04 - JS</title>
+</head>
+<body>
+	<script>
+		  var nome = 'Herbeth';
+		  var sobrenome = 'Fragoso';
+		  var idade = 21;
+		  //var pessoa = ['Herbeth', 'Fragoso', "21"];
+		  var frutas = ['laranja', 'abacate', 'melancia'];
+		  var pessoa = {nome: 'Herbeth',
+		   sobrenome: 'Fragoso',
+		   idade:21, 
+		   andar: function (){
+		  	alert('caminhando')
+		  }
+		};
+		//frutas.push('pitanga');//colocar um item no final
+		frutas.unshift('pitanga');// coloca no coimeço
+		//frutas.pop();//retira no fim
+		//frutas.shift();//retira no começo
+		 // console.log(frutas.join(' - '));
+		 //fruatas.sort();//ordenação
+		 //frutas.reverse();//revete a ordem do nosso array
+		  console.log(frutas);
+
+	</script>
+  
+</body>
+</html>

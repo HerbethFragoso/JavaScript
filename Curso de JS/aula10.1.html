@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta chaset="UTF-8"/>
+	<title>Aula 10 - JS</title>
+</head>
+
+<body>
+	<div id='msg' >
+	</div>
+	<input type="button" value="Avançar" onclick="clearInterval(msg) "/>
+	<input type="button" value="Voltar" onclick="window.history.back(); "/>
+   <script>
+     //  window.localStorage.setItem('nome', 'Herbeth');
+     //window.sessionStorage.setItem('nome', 'Herbeth');
+       //document.getElementById('msg').innerHTML = window.sessionStorage.setItem('Joaoi');
+
+     //var = janela =  window.open('http://Srbeth.info', '', 'width=500, height=400');
+     //janela.document.write('isso é para minha janela');
+     //janela.opener.document.write('isso é um texro qualquer'); 
+
+    // setTimeout(function(){console.log('Msg via setTimeout')}, 2000); 
+   //var msg = setTimeout(msgtimeout, 5000);
+  ///var msg = setInterval(msginterval, 1000);
+ var intervalo = setInterval(verificaFoco, 200);
+  var contador = 0;
+  function vericaFoco(){
+    if(document.hasFocus()){
+        contador ++;
+        console.log(contador);
+        if(contador >= 10){msgtimeout();}
+        clearInterval(intervalo);
+    }
+  }
+    function msgtimeout(){
+    	document.getElementById('msg').innerHTML = 'Obrigado por visitar minha pagina'   }
+   // function msginterval(){
+       // console.log('Masg via interval')
+    }
+
+     </script>
+
+  
+
+</body>
+</html>
+     /BOOMM\
